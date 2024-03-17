@@ -29,6 +29,54 @@ The <legend> element defines a caption for the <fieldset> element.
     <form method="get" action="" enctype="">
         <fieldset>
             <legend>Personal Information:</legend>
+            Username:       <input type="text" name="username" value="" placeholder="type username"/> <br>
+            Password:       <input type="password" name="password" value=""/> <br>
+            DOB:            <input type="date" name="dob" value=""/> <br>
+            Email:          <input type="email" name="email" value=""/> <br>
+
+            Gender:         <input type="radio" name="gender" value=""/> Male 
+                            <input type="radio" name="gender" value=""/> Female 
+                            <input type="radio" name="gender" value=""/> Other <br>
+            
+            Checkbox:       <input type="checkbox" name="anything" value=""/> Test-1 
+                            <input type="checkbox" name="anything" value=""/> Test-1 
+                            <input type="checkbox" name="anything" value=""/> Test-1  <br>
+            Phone:          <input type="number" name="anything" value=""/> <br>
+            
+            Dept:           <select name="">
+                                    <option value="">CS</option>
+                                    <option value="">CIS</option>
+                                    <option value="">CSE</option>
+                            </select> <br>
+            Add:            <textarea></textarea> <br>
+
+            upload:         <input type="file" name="myupload" value=""/> <br> 
+                            <input type="button" name="button" value="Click"/>
+                            <input type="submit" name="button" value="Submit"/>
+                            <input type="reset" name="button" value="Reset"/>
+        </fieldset>                  
+    </form>
+    
+</body>
+</html>
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Form </title>
+    <style>
+        fieldset{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <form method="get" action="" enctype="">
+        <fieldset>
+            <legend>Personal Information:</legend>
             <label for="username">Username:</label>
             <input type="text" name="username" id="username" value="" placeholder="Enter username">
             <br>
@@ -85,3 +133,4 @@ The <legend> element defines a caption for the <fieldset> element.
     
 </body>
 </html>
+-->
