@@ -1,0 +1,87 @@
+<!--
+<form> element is used to create an HTML form for user input
+<form> element is a container for different types of input elements,
+such as: text fields, checkboxes, radio buttons, submit buttons, etc.
+
+<input type="text">	    Displays a single-line text input field
+<input type="radio">	Displays a radio button (for selecting one of many choices)
+<input type="checkbox">	Displays a checkbox (for selecting zero or more of many choices)
+<input type="submit">	Displays a submit button (for submitting the form)
+<input type="button">	Displays a clickable button
+
+The <fieldset> element is used to group related data in a form.
+The <legend> element defines a caption for the <fieldset> element.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Form </title>
+    <style>
+        fieldset{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <form method="get" action="" enctype="">
+        <fieldset>
+            <legend>Personal Information:</legend>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" value="" placeholder="Enter username">
+            <br>
+      
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" value="">
+            <br>
+      
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob" value="">
+            <br>
+      
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" value="">
+            <br>
+      
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+            <br>
+      
+            <label>Checkbox:</label>
+            <input type="checkbox" name="checkbox[]" value="test1"> Test 1
+            <input type="checkbox" name="checkbox[]" value="test2"> Test 2
+            <input type="checkbox" name="checkbox[]" value="test3"> Test 3
+            <br>
+      
+            <label for="phone">Phone Number:</label>
+            <input type="number" name="phone" id="phone" value="">
+            <br>
+      
+            <label for="dept">Department:</label>
+            <select name="dept" id="dept">
+              <option value="">Select Department</option>
+              <option value="CS">Computer Science</option>
+              <option value="CIS">Computer Information Systems</option>
+              <option value="CSE">Computer Science and Engineering</option>
+            </select>
+            <br>
+      
+            <label for="address">Address:</label>
+            <textarea name="address" id="address"></textarea>
+            <br>
+      
+            <label for="myupload">Upload File:</label>
+            <input type="file" name="myupload" id="myupload" value="">
+            <br>
+      
+            <input type="submit" name="submit" value="Submit">
+            <input type="reset" name="reset" value="Reset">
+        </fieldset>                  
+    </form>
+    
+</body>
+</html>
