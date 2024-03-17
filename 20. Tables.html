@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+
+        table, th, td {
+            border: 1px solid black; /* To add a border, use the CSS border property on table, th, and td elements */
+            border-collapse: collapse; /* To avoid having double borders, set the CSS border-collapse property to collapse */
+            border-radius: 10px; /* With the border-radius property, the borders get rounded corners */
+            border-style: dotted;  /* The border-style property, you can set the appearance of the border */
+            border-color:blue;  
+           
+        }
+
+        th, td {
+            background-color: aqua; /* Background color of each cell */
+
+           /* padding:15px;   Cell padding is the space between the cell edges and the cell content, By default the padding is set to 0*/
+           padding-top: 20px;     /* Space between the top of cell and its content */
+           padding-bottom: 20px;  /* Space between the bottom of cell and its content */
+           padding-left: 30px;    /* Left space in all cells */
+           padding-right: 40px;   /* Right space in all cells */
+        }
+
+    </style>
+</head>
+<body>
+    <table style="width:100%">   <!--Set the width of the table to 100%-->
+
+        <tr>
+            <th style="width:50%"> Name </th>  <!-- Set the width of a specific column -->
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+
+        <tr style="height:50px">  <!--Set the height of the second row to 50 pixels-->
+            <td>Yash</td>
+            <td>22</td>
+            <td>Male</td>
+        </tr>
+
+        <tr style="height:50px">  <!--Set the height of the third row to 50 pixels-->
+            <td>Rohan</td>
+            <td>23</td>
+            <td>Male</td>
+        </tr>
+
+        <tr style="height:50px">  <!--Set the height of the forth row to 50 pixels-->
+            <td>Virat</td>
+            <td>33</td>
+            <td>Male</td>
+        </tr>
+        
+    </table>
+</body>
+</html>
