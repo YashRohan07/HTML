@@ -13,16 +13,26 @@
             border: 1px solid #ddd;
             padding: 5px;
         }
+        fieldset{
+            width:50px;
+        }
     </style>
 </head>
 <body>
+    <center>
+    <fieldset>
     <div>
-        <h1 class="profile-title">Person Profile</h1>
+        <h1>Person Profile</h1>
     </div>
     
     <form method="get" action="" enctype="">
+        <!--
+            method: Specifies the HTTP method used for form submission, such as "get" or "post".
+            action: Defines the URL where the form data will be sent upon submission.
+            enctype: Determines how form data should be encoded before transmission to the server.
+        -->
         
-        <table border="1">
+        <table border="1">  <!-- Adds a border around the table with a thickness of 1 pixel.-->
            
             <tr>
                 <td>Name:</td>
@@ -35,9 +45,14 @@
             <tr>
                 <td>Gender:</td>
                 <td>
-                    <label for="gender_male"><input type="radio" id="gender_male" name="gender" value="male"> Male</label>
-                    <label for="gender_female"><input type="radio" id="gender_female" name="gender" value="female"> Female</label>
-                    <label for="gender_other"><input type="radio" id="gender_other" name="gender" value="other"> Other</label>
+                    <label for="male"><input type="radio" id="male" name="gender" value="male"> Male</label>
+                    <label for="female"><input type="radio" id="female" name="gender" value="female"> Female</label>
+                    <label for="other"><input type="radio" id="other" name="gender" value="other"> Other</label>
+                    <!--
+                        The id attributes should be unique.
+                        The for attribute in <label> elements should match the id of the associated input element.
+                        The name attributes are same for each group of radio buttons (to denote they belong to the same group). 
+                    -->
                 </td>
             </tr>
             <tr>
@@ -98,12 +113,18 @@
                     <input type="checkbox" name="checkbox[]" value="test1"> Test 1
                     <input type="checkbox" name="checkbox[]" value="test2"> Test 2
                     <input type="checkbox" name="checkbox[]" value="test3"> Test 3
+                    <!--users can select both "Task1" and "Task2", and their values will be submitted as an array named 'checkbox[]'-->
                 </td>
             </tr>
 
             <tr>
                 <td>Photo:</td>
                 <td><input type="file" id="photo" name="photo" accept="image/*"></td>
+                <!--
+                    accept="image/*"
+                    The accept attribute specifies the types of files that the server will accept.
+                    In this case, it's set to "image/*", which means the input will accept any image file format.
+                -->
             </tr>
             <tr>
                 <th></th>
@@ -111,5 +132,7 @@
             </tr>
         </table>
     </form>
+</fieldset>
+</center>
 </body>
 </html>
