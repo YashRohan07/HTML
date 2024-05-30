@@ -1,0 +1,72 @@
+<!--
+   To create a class; write a period (.) character, 
+   followed by a class name. Then, define the CSS properties within curly braces {} 
+   The syntax for id is: write a hash character (#), followed by an id name.
+   Then, define the CSS properties within curly braces {}.
+   The value of the id attribute must be unique within the HTML document. 
+   The id name is case sensitive!
+   The id name must contain at least one character, cannot start with a number, 
+   and must not contain whitespaces (spaces, tabs, etc.)
+   
+   A class name can be used by multiple HTML elements,
+   while an id name must only be used by one HTML element within the page
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* Style the element with the unique id "property" */
+#property {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Style all elements with the class name "person" */
+.person {
+  background-color: skyblue;
+  color: black;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Style all elements with the class name "abc" */
+.abc {
+  font-size: 100%;
+  color: blueviolet;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Applying unique id "property" to h1 element -->
+<h1 id="property">Yash Rohan</h1>    
+
+<!-- Applying class "abc" to span elements -->
+<h1>This is <span class="abc">Yash</span> Here</h1>
+<p>This is <span class="abc">Rohan</span> Here</p>    
+
+<!-- Applying class "person" to div elements -->
+<div class="person">
+  <h2>Virat</h2>
+  <p>One of the best batsmen</p>
+</div>
+
+<div class="person">
+  <h2>Starc</h2>
+  <p>One of the best bowlers</p>
+</div>
+
+<div class="person">
+  <h2>Sakib</h2>
+  <p>World's best Allrounder</p>
+</div>
+
+
+</body>
+</html>

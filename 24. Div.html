@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Define styles for the container */
+        .container {
+            width: 100%; /* The container takes up the full width of its parent. */
+            overflow: auto; /* This ensures that any overflowing content will be scrollable. */
+            text-align: center; /* The content inside the container is centered. */
+        }
+    
+        /* Define styles for the div elements inside the container */
+        .container div {
+            width: 33%; /* Each div takes up 33% of the container's width */
+            float: left; /* Floats the <div> elements to the left so they appear side by side. */
+        }
+
+        /* Define specific styles for the three div elements */
+        .container div:nth-child(1) {
+            background-color: lightcoral; /* Background color for the first div */
+        }
+        .container div:nth-child(2) {
+            background-color: lightseagreen; /* Background color for the second div */
+        }
+        .container div:nth-child(3) {
+            background-color: lightsteelblue; /* Background color for the third div */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h2>USA</h2>
+            <p>Dream country for me</p>
+            <p>But I also love Europe</p>
+        </div>
+
+        <div> 
+            <h2>Paris</h2>
+            <p>Paris is the capital of France</p>
+            <p>I know French Language</p>
+        </div>
+
+        <div> 
+            <h2>Berlin</h2>
+            <p>Berlin is the capital of Germany</p>
+            <p>I don't prefer it</p>
+        </div>
+    </div>
+</body>
+</html>
